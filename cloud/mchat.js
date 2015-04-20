@@ -58,6 +58,7 @@ function receiversOffline(req, res) {
   if (req.params.convId) {
     // api v2
     _receiversOffLine(req.params).then(function (result) {
+      console.log(result);
       res.success(result);
     }, function (error) {
       console.log(error.message);
