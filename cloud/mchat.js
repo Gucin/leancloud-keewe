@@ -21,7 +21,7 @@ function getPushMessage(params, user) {
   };
   var msg = JSON.parse(contentStr);
   var msgDesc = getMsgDesc(msg);
-  var name = user.get('username');
+  var name = user.get('nickname');
   json.alert = name + ' : ' + msgDesc;
   return JSON.stringify(json);
 }
